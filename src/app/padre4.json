@@ -1,0 +1,31 @@
+{
+    "padre":{
+        "Madre":{
+            "hijo1":{
+                "nombre":"gera",
+                "edad": "20"
+    
+            }, "hijo2":{
+                    "nombre":"jera",
+                    "edad": "23"
+            }
+    
+        }, "Hermana1":{
+                "nombre":"carlos",
+                "edad": "33"
+        }
+        
+    }, "hermano01":{
+                "nombre":"carlos",
+                "edad": "33",
+                "hijo1": "rich",
+                "hijo2":"monche",
+                "hijo":{
+                    "nombre":"carlos",
+                    "edad": "33"
+
+                }
+         }
+    
+    
+}

@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-6">
+    <div style="display: block;">
+    <canvas baseChart width="750" height="450" 
+                [datasets]="this.Esp.lineChartData"
+                [labels]="this.Esp.lineChartLabels"
+                [options]="this.Esp.lineChartOptions"
+                [colors]="this.Esp.lineChartColors"
+                [legend]="this.Esp.lineChartLegend"
+                [chartType]="this.Esp.lineChartType"
+                (chartHover)="this.Esp.chartHovered($event)"
+                (chartClick)="this.Esp.chartClicked($event)"></canvas>
+    </div>
+  </div>
+  <div class="col-md-6" style="margin-bottom: 10px">
+    <table class="table table-responsive table-condensed">
+      <tr>
+        <th *ngFor="let label of lineChartLabels">{{label}}</th>
+      </tr>
+      <tr *ngFor="let d of lineChartData">
+        <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
+      </tr>
+    </table>
+    
+  </div>
+</div>
+
+

@@ -1,0 +1,17 @@
+<div>
+  <div style="display: block" >
+    <canvas baseChart width="450" height="450"
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <mat-chip-list>
+    <div class="cards">
+    <mat-chip color="primary" selected (click)="randomize()"  >update</mat-chip>
+    </div>
+</mat-chip-list>
+</div>

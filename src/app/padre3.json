@@ -1,0 +1,14 @@
+{
+    "madre":{
+        "hijo1": "gerardo",
+        "hijo2": "gerardo",
+        "hijo3":{
+            "primo":"gege"
+        }
+    },
+
+    "hermano":{
+        "hijo4": "adops",
+        "hijo5": "adops"
+    }   
+}
